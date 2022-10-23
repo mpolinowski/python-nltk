@@ -32,7 +32,7 @@ json_response = { "reviews": [
 
 polarity_scores = []
 
-# extract article abstracts and combine them
+# extract reviews text and combine them
 for review in json_response['reviews']:
     score = analyzer.polarity_scores(review['text'])
     polarity_scores.append(score)
